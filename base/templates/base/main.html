@@ -1,0 +1,64 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1" />
+
+	<link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Russo+One&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons (Optional) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+	<link rel="stylesheet" type="text/css" href="{% static 'css/default.css' %}">
+    <title>Sara Portfolio</title>
+
+</head>
+<body>
+    {% include 'base/navbar.html' %}
+    {% block content %}
+    <h1>Main page template</h1>
+    {% endblock content %}
+    <footer class="bg-info text-white pt-4 pb-3 mt-5">
+        <div class="container text-center text-md-start">
+          <div class="row align-items-center">
+            <div class="col-md-6 mb-3 mb-md-0">
+              <h5 class="fw-bold">Sara Mohsen</h5>
+            <p class="text-muted small mb-0">Software Engineer | Full Stack Developer</p>
+            </div>
+      
+            <div class="col-md-6 text-md-end">
+              <a href="https://github.com/yourusername" target="_blank" class="text-white me-3">
+                <i class="bi bi-github fs-5"></i>
+              </a>
+              <a href="https://linkedin.com/in/yourprofile" target="_blank" class="text-white me-3">
+                <i class="bi bi-linkedin fs-5"></i>
+              </a>
+              <a href="mailto:sara@email.com" class="text-white">
+                <i class="bi bi-envelope-fill fs-5"></i>
+              </a>
+            </div>
+          </div>
+          <div class="text-center text-muted mt-3 small">
+            &copy; <span id="year"></span> Sara Mohsen.
+          </div>
+        </div>
+      </footer>
+      
+      <!-- Bootstrap Icons CDN (include in your <head> or before </body>) -->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+      
+      <!-- Script to auto-update the year -->
+      <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+      </script>
+          {% load static %}
+    
+    {% comment %} <video class="video-background" src="{% static 'images/video.webm' %}" autoplay loop muted></video> {% endcomment %}
+
+</body>
+</html>

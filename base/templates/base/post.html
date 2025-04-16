@@ -1,0 +1,16 @@
+{% extends 'base/main.html' %}
+{% load static %}
+{% block content %}
+
+<head> 
+    <link rel="stylesheet" href="{% static 'css/default.css' %}"> 
+</head>
+<div class="main-container">
+    <img style="width: 65%; height: 100%; object-fit: cover;" src="{{ post.thumbnail.url }}" > 
+    <h1>{{post.headline}}</h1>
+    <h2>{{post.sub_headline}}</h2>
+    <p>{{post.body|safe}}</p>
+
+   
+</div>
+{% endblock content %}
