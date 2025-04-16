@@ -1,3 +1,5 @@
+![image](https://github.com/user-attachments/assets/56327b22-ba3d-418e-ba27-7ae764231fde)
+
 ```markdown
 # Django Portfolio Website
 
